@@ -13,6 +13,7 @@ for i in range(len(trees)-1):
         if trees[i+1][1] - trees[i][1] - 1 == 13:
             bob.append(i)
 print(bob, trees[bob[-1]][0],trees[bob[-1]][1]+1)
+# 12
 
 
 
