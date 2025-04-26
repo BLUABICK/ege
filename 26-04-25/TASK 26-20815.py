@@ -6,5 +6,5 @@ with open('26_20815.txt') as file:
 
 res.sort(key=lambda arr: (-(arr[1]+arr[2]+arr[3]+arr[4]), -arr[4], arr[0]))
 print(res)
-for i in range(len(res)):
-    if res[i]
+# for i in range(len(res)):
+#     if res[i]
