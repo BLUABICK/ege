@@ -8,7 +8,9 @@ with open('26_9077.txt') as file:
 customers.sort()
 print(customers)
 cnt =0
+cnt2 = 0
 parking = dict()
+busy = []
 for i in range(1, M+1):
     parking[i] = []
 
@@ -19,6 +21,11 @@ for customer in customers:
         parking[customer[2]].remove(min(parking[customer[2]]))
     parking[customer[3]].append(customer[0]+customer[1])
 
-print(cnt)
+timeline = [0]*10_000
 
+client = dict()
+for customer in customers:
+    for i in range(customer[0], customer[0]+customer[1]):
+        timeline[i] +=1
+print(cnt, max(timeline))
 
