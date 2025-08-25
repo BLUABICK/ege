@@ -17,8 +17,10 @@ from re import *
 # задача 9
 # with open(f'regexp-practice-9.txt', encoding='UTF-8') as file:
 #     text = file.read()
-# # pattern = r'(?<=http://)|(?<=https://)'
-# pattern = '((https?://[^"]+))'
+# must_1 = r'<a href="'
+# must_2 = r'">'
+# pattern = fr'(?<={must_1}).+?(?={must_2})'
+# # pattern = '((https?://[^"]+))'
 # matches = [match.group() for match in finditer(pattern, text)]
 # print(matches)
 
@@ -32,7 +34,7 @@ from re import *
 # задача 11
 # with open(f'regexp-practice-11.txt', encoding='UTF-8') as file:
 #     text = str(file.readlines())
-# pattern = r'<[^>]+>'
+# pattern = r'<[^>]+?>'
 # matches = sub(pattern, '', text)
 # print(matches)
 
@@ -48,7 +50,7 @@ from re import *
 # задача 13
 # with open(f'regexp-practice-13.txt', encoding='UTF-8') as file:
 #     text = str(file.readlines())
-# pattern = r'\b(\w+)\s+\1\b' # - нашел
+# pattern = r'\b(\w+)(\s+\1)+\b'
 # matches = [match.group() for match in finditer(pattern, text)]
 # print(matches)
 
