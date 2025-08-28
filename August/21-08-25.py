@@ -7,7 +7,7 @@ from re import *
 # matches = [match.group() for match in finditer(pattern, text)]
 # print(len(max(matches, key=len)))
 
-with open('24-347.txt') as file:
+with open('Tasks-files/24-347.txt') as file:
     text = file.readline()
 pattern = r'[1-7][0-7]*'
 

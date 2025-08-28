@@ -22,7 +22,7 @@ from re import *
 # print(need2)
 # print(len(max(need2, key=len)))
 
-with open('24-314.txt') as file:
+with open('Tasks-files/24-314.txt') as file:
     text = str(file.readline())
 
 must_1 = r'([1-7][0-7]*|0)'

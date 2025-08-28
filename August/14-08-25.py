@@ -14,7 +14,7 @@ from re import *
 # print(matches)
 # print(len(max(matches, key=len)) // 2)
 
-with open('2402.txt') as file:
+with open('Tasks-files/2402.txt') as file:
     text = file.readline()
 number = r'([789][0789]*|0)'
 pattern = fr'({number}[\*\-])+{number}'
