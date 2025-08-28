@@ -28,8 +28,24 @@ with open('24-314.txt') as file:
 must_1 = r'([1-7][0-7]*|0)'
 pattern = fr'(?<=F)({must_1}[+*])+{must_1}'
 matches = [match.group() for match in finditer(pattern, text)]
-maxx = max(matches, key=len)
-print(maxx)
-print(eval(maxx))
-maxx2 = 2+3*3+5+27*30+53+10+20+12*28+30*12
+max_len = len(max(matches, key=len))
+
+dlin = []
+for i in matches:
+    if len(i) == max_len:
+        dlin.append(i)
+
+maxx2 = max(dlin)
 print(maxx2)
+
+maxx3 = ''
+i2 = ''
+for i in maxx2:
+    if i not in '+*':
+        i2 += i
+
+    else:
+        maxx3 = maxx3 + str(int(i2, 8)) + i
+        i2 = ''
+print(eval(maxx3+i2))
+
