@@ -1,4 +1,4 @@
-# Модуль Turtle
+# модуль Turtle
 from turtle import *
 
 # изменение размера холста
