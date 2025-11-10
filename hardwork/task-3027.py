@@ -1,3 +1,4 @@
+cnt = 0
 for N in range(1,10000):
     R = f'{N:b}'
     if N%2==0:
@@ -5,6 +6,6 @@ for N in range(1,10000):
     else:
         R = '1' + R + '00'
     R = int(R, 2)
-    if 500 < R <= 700:
-        print(N)
-        break
+    if 500 <= R <= 700:
+        cnt+=1
+print(cnt)
