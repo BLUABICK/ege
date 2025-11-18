@@ -61,9 +61,9 @@
 #     if R.count('0')==122:
 #         print(x)
 #         break
-from sys import setrecursionlimit
-
-setrecursionlimit(10000000)
+# from sys import setrecursionlimit
+#
+# setrecursionlimit(10000000)
 # def f(n):
 #     if n<10:
 #         return n
@@ -71,14 +71,14 @@ setrecursionlimit(10000000)
 #
 # print((f(6250)+2*f(6244))/f(6238))
 
-def f(a,b):
-    if b>a or a==13:
-        return 0
-    if a==b:
-        return 1
-    return f(a-1,b) + f(a-2,b) + f(a//3,b)
-m = f(19,6)*f(6,4)
-print(m)
+# def f(a,b):
+#     if b>a or a==13:
+#         return 0
+#     if a==b:
+#         return 1
+#     return f(a-1,b) + f(a-2,b) + f(a//3,b)
+# m = f(19,6)*f(6,4)
+# print(m)
 
 # from re import *
 
@@ -113,3 +113,4 @@ print(m)
 #         if cnt%2!=0:
 #             cnt_1.append(cnt)
 # print(cnt_1)
+
