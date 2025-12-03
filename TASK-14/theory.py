@@ -119,10 +119,9 @@
 
 # перевод в любую систему (2 <= sys <= 36)
 
-# from string import  digits, ascii_lowercase
+# from string import printable as alph
 # def convert2(num, sys):
 #     res = ''
-#     alph = digits + ascii_lowercase
 #     while num:
 #         res += alph[num % sys]
 #         num //= sys
