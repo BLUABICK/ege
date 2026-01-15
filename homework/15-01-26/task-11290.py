@@ -2,13 +2,15 @@ from string import printable as alph
 from itertools import *
 
 cnt = 0
-print(alph[:6])
-for val in product(alph[:6], repeat=7):
+print(alph[:16])
+for val in product(alph[:16], repeat=4):
     val = ''.join(val)
-    if val[0] != '0':
-        for i in '046':
+    if val[0] != '0' and val.count('9')==1:
+        for i in '02468ace':
             val = val.replace(i, '*')
-        if '2*' not in val and '*2' not in val and '22' not in val and val.count('2')==1:
+        for i in '13579bdf':
+            val = val.replace(i, '.')
+        if '..' not in val and '**' not in val:
             cnt+=1
 
 print(cnt)
