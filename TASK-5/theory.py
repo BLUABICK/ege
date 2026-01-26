@@ -18,7 +18,7 @@ def convert(num, sys):
     while num:
         res += str(num % sys)
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 # перевод в любую систему (2 <= sys <= 36)
 
@@ -28,7 +28,7 @@ def convert2(num, sys):
     while num:
         res += alph[num % sys]
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 # перевод в десятичную систему
 bin_num = '101'
 oct_num = '765'
