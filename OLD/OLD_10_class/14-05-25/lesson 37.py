@@ -17,7 +17,7 @@ def welcome_print(name='User'):
 
 welcome_print()
 
-# args - сокращение от слова arguments(аргументы)
+# args - сокращение от слова argument(аргументы)
 # позволяет передать в функцию произвольное кол-во аргументов
 # * - команда распаковки
 def print_sum(*args):
@@ -29,7 +29,7 @@ def print_sum(*args):
 print_sum(1, 2, 3, 4, 5)
 
 
-#kwargs - сокращение от слов key word arguments (именованные аргументы)
+#kwargs - сокращение от слов key word argument (именованные аргументы)
 # ** - сопоставление ключей из словаря и названий переменных в функции
 def print_client_data(name, surname, age, address):
     print('Имя клиента:', name)
