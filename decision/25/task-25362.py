@@ -14,7 +14,7 @@ for i in range(1_350_051, 10**20):
     G = f(i)
 
     if G:
-        print(i, G)
+        print(i, min(G))
         cnt+=1
         if cnt==5:
             break
