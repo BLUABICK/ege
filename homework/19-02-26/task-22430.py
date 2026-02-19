@@ -14,7 +14,7 @@ def f(num):
             if is_prime(num // i): d |= {num // i}
     a = sorted(d)
     if len(d)>=4:
-        M = a[1] + a[2] + a[-1] + a[-2]
+        M = a[0] + a[1] + a[-1] + a[-2]
         if M % 114 == 39:
             return M
     return 0
