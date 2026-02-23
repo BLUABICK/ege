@@ -8,5 +8,3 @@ def f(a, b):
     if N ==6:
         return N
     return 0
-
-for i in range(34, 60):
