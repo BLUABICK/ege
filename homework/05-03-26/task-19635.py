@@ -8,7 +8,7 @@ def f(x, y, s):
     h = [f(x - 3, y - 3, s - 1),
          f(x//2, y, s - 1),
          f(x, y//2, s - 1)]
-    return any(h) if (s - 1) % 2 == 0 else any(h)
+    return any(h) if (s - 1) % 2 == 0 else all(h)
 
 
 print('19)', [x for x in range(53, 500) if f(48, x, 2)]) # 52
