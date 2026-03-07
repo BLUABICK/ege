@@ -1,13 +1,14 @@
-from string import printable as alph
+def convert(num, x):
+    val = 0
+    for i in num:
+        val = val * x + int(i, 36)
+    return val
 
-print(alph)
-for p in range(34, 37):
-    num1 = int('kot', p)
-    num2 = int('golodni', p)
-    num3 = int('meeow', p)
-    num4 = int('100', p)
-    num5 = int('420194023088')
-    num = num1+num2+num3+num4+num5
-    if num:
-        print(p, int('purr', 36), num)
 
+for p in range(33, 100):
+    num1 = convert('KOT', p)
+    num2 = convert('GOLODNI', p)
+    num3 = convert('MEEOW', p)
+    num4 = convert('100', p)
+    if num1 + num2 == num3 * num4 - 20194023088:
+        print(convert('PURR', p))
