@@ -5,7 +5,8 @@ from ipaddress import *
 ip = ip_address('192.0.0.5')
 
 # Формирует все ip_адреса по заданной сети и маске
-net = ip_network('192.0.0.5/255.255.255.0')
+net = ip_network('192.0.0.5/255.255.255.0', 0)
+net = ip_network('192.0.0.5/29', 0)
 
 # Широковещательный адрес. Не может быть присвоен устройству
 broadcast_address = net.broadcast_address
