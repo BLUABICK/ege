@@ -15,7 +15,7 @@ def ART_M(N, cost):
     cost = cost[sale2:]
     for i in range(sale):
         cust -= cost[i*6]//2
-    # print(cust, bill)
+    print(cust, bill)
 
 print(timeit('ART_M(N,  cost)', globals=globals(), number=100))
 
