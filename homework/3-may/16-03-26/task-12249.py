@@ -1,4 +1,4 @@
-with open(r'.\17_12249.txt') as file:
+with open(r'17_12249.txt') as file:
     data = [int(i) for i in file]
 
 maxx = max([x for x in data if 10000<=abs(x)<=99999 and abs(x)%10==3])

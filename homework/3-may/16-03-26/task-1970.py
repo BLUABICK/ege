@@ -1,4 +1,4 @@
-with open(r'.\17_1970.txt') as file:
+with open(r'17_1970.txt') as file:
     data = [int(i) for i in file]
 
 minn = min(data)

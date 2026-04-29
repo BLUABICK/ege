@@ -1,4 +1,4 @@
-with open(r'.\17_21903.txt') as file:
+with open(r'17_21903.txt') as file:
     data = [int(i) for i in file]
 
 min_15 = min(i for i in data if len(str(abs(i)))==3 and abs(i)%100==15)**2
