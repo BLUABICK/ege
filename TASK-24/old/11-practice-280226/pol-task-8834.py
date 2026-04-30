@@ -1,5 +1,5 @@
 from re import finditer
-with open(r'..\files\24-371.txt') as file:
+with open(r'../../files/24-371.txt') as file:
     data = file.readline()
 
 pattern = r'(A[B-Z ]*){98}\.'

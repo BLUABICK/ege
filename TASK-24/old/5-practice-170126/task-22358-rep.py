@@ -1,14 +1,18 @@
-from re import *
+from string import digits, ascii_uppercase
 
-with open(r'..\files\24_22358.txt') as file:
+with open(r'../../files/24_22358.txt') as file:
     data = file.readline()
 
-pattern = r'[1-9AB][0-9AB]*'
-matches = [match.group() for match in finditer(pattern, data)]
-
+alph = digits + ascii_uppercase
+data2 = data
+for i in alph[12:]:
+    data2 = data2.replace(i, ' ')
+while ' 0' in data2:
+    data2 = data2.replace(' 0', ' ')
+data2 = data2.split()
 ans = '0'
 
-for match in matches:
+for match in data2:
     if match and int(match,12)%3==0:
         if int(ans,12)< int (match,12):
             ans=match

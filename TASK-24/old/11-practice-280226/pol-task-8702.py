@@ -1,4 +1,4 @@
-with open(r'..\files\24-367.txt') as file:
+with open(r'../../files/24-367.txt') as file:
     data = file.readline()
 
 data = data.replace('.A', ' .A')

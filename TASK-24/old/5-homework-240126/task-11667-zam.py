@@ -1,4 +1,4 @@
-with open(r'..\files\24_11667.txt') as file:
+with open(r'../../files/24_11667.txt') as file:
     data = file.readline()
 
 data = data.split('INFINITY')
