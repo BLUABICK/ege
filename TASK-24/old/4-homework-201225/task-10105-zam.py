@@ -1,4 +1,4 @@
-with open(r'../../files/24_10105.txt') as file:
+with open(r'../files/24_10105.txt') as file:
     data = file.readline()
 
 data = data.split('T')

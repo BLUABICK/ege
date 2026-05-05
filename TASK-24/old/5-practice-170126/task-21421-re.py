@@ -1,6 +1,6 @@
 from re import finditer
 
-with open(r'../../files/24_21421.txt') as file:
+with open(r'../files/24_21421.txt') as file:
     data = file.readline()
 
 pattern = r'[1-9AB][0-9AB]*[02468A]'

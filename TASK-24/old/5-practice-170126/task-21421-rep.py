@@ -1,6 +1,6 @@
 from string import digits, ascii_uppercase
 
-with open(r'../../files/24_21421.txt') as file:
+with open(r'../files/24_21421.txt') as file:
     data = file.readline()
 
 alph = digits + ascii_uppercase
