@@ -12,6 +12,6 @@ while i < len(data) - 1:
         max_pairs = max(max_pairs, cnt)
         cnt = 0
         i += 1
-max_pairs = max(max_pairs, cnt)
+    max_pairs = max(max_pairs, cnt)
 
 print(max_pairs)
