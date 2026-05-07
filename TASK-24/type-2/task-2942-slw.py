@@ -9,7 +9,6 @@ while i < len(data) - 1:
         cnt += 1
         i += 2
     else:
-        max_pairs = max(max_pairs, cnt)
         cnt = 0
         i += 1
     max_pairs = max(max_pairs, cnt)
