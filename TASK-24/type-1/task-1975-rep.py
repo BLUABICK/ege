@@ -1,4 +1,4 @@
-with open(r'..\files\24_1975.txt') as file:
+with open(r'../files/24_1975.txt') as file:
     data = file.readline()
 
 data = 'PPP***PP**P'

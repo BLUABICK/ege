@@ -1,5 +1,5 @@
 from re import *
-with open(r'..\files\24_2942.txt') as file:
+with open(r'../files/24_2942.txt') as file:
     data = file.readline()
 
 max_pairs = 0
