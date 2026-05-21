@@ -4,15 +4,24 @@ with open(r'24_18239.txt') as file:
     data = file.readline()
 
 num = r'(0|[1-9][0-9]*)'
-max_len = 0
+from re import *
 
-for i in range(len(data)):
-    for j in range(i + 1, len(data) + 1):
-        sub = data[i:j]
-        if match(fr'^-?{num}(?:-{num})*$', sub):
-            nums = [int(x) for x in findall(r'-?\d+', sub)]
-            val = nums[0] - sum(nums[1:])
-            if val > -20000:
-                max_len = max(max_len, j - i)
-
-print(max_len)
+with open("24_18239.txt") as file:
+    data = file.readline()
+    pattern = r"-?[1-9][0-9]*(-[1-9][0-9]*)*"
+    matches = [match.group() for match in finditer(pattern, data)]
+    m = 0
+    for match in matches:
+        nums = list(map(int, match.strip('-').split('-')))
+        total_len = 0
+        total_sum = 0
+        l = 0
+        for r in range(len(nums)):
+            total_sum += nums[r]
+            total_len += len(str(nums[r]))
+            while total_sum - nums[l] * 2 >= 20000:
+                total_sum -= nums[l]
+                total_len -= len(str(nums[l]))
+                l += 1
+            m = max(m, total_len + r - l + (total_sum < 20000))
+    print(m)
