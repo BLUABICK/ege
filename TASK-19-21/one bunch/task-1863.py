@@ -8,4 +8,4 @@ def f(x, s):
 
 print('19)', [x for x in range(1,40) if f(x, 2)])
 print('20)', [x for x in range(1,40) if f(x, 3) and not f(x, 1)])
-print('21)', [x for x in range(1,40) if f(x, 4) and not f(x,1)])
+print('21)', [x for x in range(1,40) if f(x, 4) and not f(x,2)])
