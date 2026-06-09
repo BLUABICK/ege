@@ -1,4 +1,4 @@
-with open(r'..\files\26_7014.txt') as file:
+with open(r'../files-1/26_7014.txt') as file:
     N = int(file.readline())
     prices = [int(file.readline()) for _ in range(N)]
 

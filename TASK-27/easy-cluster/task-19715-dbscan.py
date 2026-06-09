@@ -8,7 +8,7 @@
 #     return min(res)[1]
 #
 #
-# with open('../files/27.21.A_19715.txt') as file:
+# with open('../files-1/27.21.A_19715.txt') as file:
 #     dots = [list(map(float, i.replace(',', '.').split())) for i in file]
 #
 # eps = 1

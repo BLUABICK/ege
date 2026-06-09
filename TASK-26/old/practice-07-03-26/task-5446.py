@@ -1,4 +1,4 @@
-with open(r'..\files\26_5446.txt') as file:
+with open(r'../files-1/26_5446.txt') as file:
     N = int(file.readline())
     tubes = [tuple(map(int, i.split())) for i in file]
 

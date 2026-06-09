@@ -1,4 +1,4 @@
-with open(r'..\files\26_18541.txt') as file:
+with open(r'../files-1/26_18541.txt') as file:
     N, M = map(int, file.readline().split())
     data = [int(i) for i in file]
 

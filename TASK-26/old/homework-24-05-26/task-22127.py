@@ -1,4 +1,4 @@
-with open(r'..\files\26_22127.txt') as file:
+with open(r'../files-1/26_22127.txt') as file:
     N = int(file.readline())
     times = [list(map(int, i.split())) for i in file]
 

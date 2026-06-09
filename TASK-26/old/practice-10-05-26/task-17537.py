@@ -1,4 +1,4 @@
-with open(r'../files/26_17537.txt') as file:
+with open(r'../files-1/26_17537.txt') as file:
     N, M, K = list(map(int, file.readline().split()))
     sits = [list(map(int, i.split())) for i in file.readlines()]
 

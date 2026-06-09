@@ -7,7 +7,7 @@
 #         res.append([sum_dist, dot])
 #     return min(res)[1]
 #
-# with open(r'.\files\27_A_21599.txt') as file:
+# with open(r'.\files-1\27_A_21599.txt') as file:
 #     dots = [list(map(float, i.replace(',', '.').split())) for i in file]
 #
 # cluster_A_1 = [d for d in dots if d[1] > 0.8 * d[0] - 8]

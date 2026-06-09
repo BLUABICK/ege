@@ -1,4 +1,4 @@
-with open(r'..\files\26_7626.txt') as file:
+with open(r'../files-1/26_7626.txt') as file:
     K = int(file.readline())
     N = int(file.readline())
     passengers = [list(map(int, i.split())) for i in file]

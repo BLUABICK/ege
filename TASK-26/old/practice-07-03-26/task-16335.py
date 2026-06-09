@@ -1,4 +1,4 @@
-with open(r'../files/26_16335.txt') as file:
+with open(r'../files-1/26_16335.txt') as file:
     N = int(file.readline())
     crusts = [int(i) for i in file]
 
