@@ -8,7 +8,7 @@ ams= []
 ans = []
 for i in range(len(powers)):
     for snow in snowblowers:
-        if powers[i]<snow[0]:
+        if powers[i]<=snow[0]:
             ams.append(snow[1])
             ans.append(snow)
             break
